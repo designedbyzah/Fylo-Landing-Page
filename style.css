@@ -327,7 +327,8 @@ p {
 /* Footer */
 
 .footer {
-  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   background-color: var(--very-dark-blue);
   width: 100%;
@@ -425,12 +426,19 @@ p {
   /* Header */
 
   .fylo_logo img {
-    width: 44%;
+    width: 100%;
+  }
+
+  .fylo_logo {
+    flex: 1;
+    display: flex;
   }
 
   .header_links {
     display: flex;
-    gap: 12px;
+    gap: 18px;
+    flex: 3;
+    justify-content: flex-end;
   }
 
   .header_links a {
